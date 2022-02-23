@@ -18,7 +18,28 @@ function buildTable(data) {
 		// Add each value to its own cell
 		Object.values(dataRow).forEach((val => {
 			let cell = row.append("td");
-			cell.text(val)
+			cell.text(val);
 		});
 	});
-}
+};
+
+function handleClick() {
+	// Grab the datetime from the filter input
+	let date = d3.select("#datetime").property("value");
+	let filteredData = tableData;
+
+	// Filter the data by date if a date was entered
+	if (date) {
+		filteredData = filterdData.filter(row => row.datetime === date);
+	};
+	
+	// Build our table using the filtered data
+	buildTable(filteredData);
+};
+
+
+// Attach an event to listen for the form button
+d3.selectAll("#filter-btn").on("click", handleClick);
+
+// Build the table when the page loads
+buildTable(tableData);
