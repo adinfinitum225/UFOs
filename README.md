@@ -1,6 +1,6 @@
 # UFOs
 
-![UFO Header](media/)
+![UFO Header](media/UFO_header.png)
 
 ## Overview
 
@@ -16,10 +16,10 @@ Dana needed a webpage that would make it easy for users to search through UFO si
 ![Sighting Table Unfiltered](media/UFO_full_table.png)
 Performing a search is done by navigating to a filter text box and typing in what value you want to find matching results for. There are multiple filter boxes, and all can be used at the same time to really narrow down the results.
 
-![Sighting Table with One Filter](media/UFO_.png)
+![Sighting Table with One Filter](media/UFO_one_filter.png)
 As is shown in this photo, once you have typed a value into a filter box you can press the return key or change focus from the element. This triggers the update script and filters the table.
 
-![Sighting Table with Two Filters](media/UFO_.png)
+![Sighting Table with Two Filters](media/UFO_two_filter.png)
 This screenshot shows the results of the table after it has been filtered with two filters. There is no special order that needs to be followed, and results can be narrowed down in whatever sequence you want.
 
 ## Summary
